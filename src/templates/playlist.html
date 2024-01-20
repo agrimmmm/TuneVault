@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<link rel="stylesheet" href="../static/playlist.css">
+		<link rel="icon" href="../static/img/sax.png" type="image/x-icon">
+		<style>@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap')</style>
+		<title>TuneVault | Your Playlist</title>
+	</head>
+		
+	<body>
+		<nav style="font-family: Arial, Helvetica, sans-serif;">
+            <a id="clicktohome" href="home.html"><img src="../static/img/sax_tv.png" alt="Site logo" style="height: 100px; margin-left: 50px;"></a>
+            <ul style="width: 60%; float: right; margin-right: 50px; text-align: center; margin-top: 20px; font-family: Courier Prime, Arial;">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="artists.html">Artists</a></li>
+        		<li><a href="search.html">Search</a></li>
+        		<li><a href="spotlight.html">Spotlight</a></li>
+                <li><a href="playlist.html" style="color: chartreuse">Playlist</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </nav>
+		<div class="pageTitle">YOUR PLAYLIST </div>
+		<p>&nbsp</p>
+		
+		<!-- <p class="message">You have not added any songs to your playlist.</p> -->
+
+	{% if agrim %}	
+		{% for row in agrim %}
+
+		<div class="ncbox" style="font-size: 25px;">
+			<img class="ppic" src="{{ row['img'] }}" align="left">
+			<div class="name">{{ row['name'] }}</div>
+			<div class="artist">{{ row['artist'] }}</div>
+			<div class="album">{{ row['album'] }}</div>
+			<div class="duration">{{ row['duration'] }}</div>
+			<button class="rem-butt" id="{{ row['id'] }}">-</button>
+		</div>
+
+		<p>&nbsp;</p>
+		
+		{% endfor %}
+	{% else %}
+		<p class="message" style="margin-top: 300px;">You have not added any songs to your playlist.</p>
+	{% endif %}
+
+	<script src="../static/playlist.js"></script>
+	<script src="../static/nav.js"></script>
+
+</body>
+	
+	<p>&nbsp</p>
+	<p>&nbsp</p>
+		
+	<footer style="margin-top: 410px; position: absolute;">
+            <span style="font-family: Courier Prime, Arial;">&#169 2023 &emsp; |&emsp; TuneVault &emsp;|&emsp; All rights reserved &emsp;|&emsp; <a href="about.html" style="margin-bottom: 0%;">About us</a></span>
+        </footer>
+</html>

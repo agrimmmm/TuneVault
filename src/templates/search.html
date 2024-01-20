@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="icon" href="../static/img/sax.png" type="image/x-icon">
+        <link rel="stylesheet" href="../static/stylesheet.css">
+        <title>TuneVault | Search</title>
+    </head>
+    <body>
+        <nav style="font-family: Arial, Helvetica, sans-serif;">
+            <a id="clicktohome" href="home.html"><img src="../static/img/sax_tv.png" alt="Site logo" style="height: 100px; margin-left: 50px;"></a>
+            <ul style="width: 60%; float: right; margin-right: 50px; text-align: center; margin-top: 20px; font-family: Courier Prime, Arial;">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="artists.html">Artists</a></li>
+                <li><a style="color: chartreuse;" href="search.html">Search</a></li>
+                <li><a href="spotlight.html">Spotlight</a></li>
+                <li><a href="playlist.html">Playlist</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </nav>
+        <br><br><br>
+        <div style="padding-left: 100px; font-family: 'Courier Prime', Courier, monospace;">
+        <h1>Search for songs directly from iTunes</h1>
+        <br><br>
+        <div style="padding-left: 50px;">
+        <form class="search-bar">
+            <input type="text", id="search", name="search">
+            <input type="submit", value="Search" id="s-btn">
+        </form>
+        <br><br>
+        <form class="filters" style="font-family: 'Courier Prime', Courier, monospace;">
+            <label for="duration">Maximum Duration (in Minutes):&emsp;</label>
+            <input type="number" id="duration" name="duration">
+            &emsp;
+            <label for="explicit">Filter:&emsp;</label>
+            <select id="explicit" name="explicit">
+                <option value="all" selected>All</option>
+                <option value="explicit">Explicit</option>
+                <option value="notexplicit">Not Explicit</option>
+            </select>
+            &emsp;
+            <button id="clearFilters">Clear Filters</button>
+        </form>
+        <br><br>
+    </div>
+        <div id="results"></div>
+        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+        <script src="../static/search.js"></script>
+        <script src="../static/nav.js"></script>
+
+        <footer>
+            <span style="font-family: Courier Prime, Arial;">&emsp; &#169 2023 &emsp; |&emsp; TuneVault &emsp;|&emsp; All rights reserved &emsp;|&emsp; <a href="about.html" style="margin-bottom: 0%;">About us</a></span>
+        </footer>
+    </body>
+</html>

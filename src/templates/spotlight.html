@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<link rel="stylesheet" href="../static/stylesheet.css">
+		<link rel="icon" href="../static/img/sax.png" type="image/x-icon">
+		<style>@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&display=swap')</style>
+		<title>TuneVault | Spotlight</title>
+	</head>
+		
+	<body>
+		
+	<nav style="font-family: Arial, Helvetica, sans-serif;">
+            <a id="clicktohome" href="home.html"><img src="../static/img/sax_tv.png" alt="Site logo" style="height: 100px; margin-left: 50px;"></a>
+            <ul style="width: 60%; float: right; margin-right: 50px; text-align: center; margin-top: 20px; font-family: Courier Prime, Arial;">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="artists.html">Artists</a></li>
+        		<li><a href="search.html">Search</a></li>
+        		<li><a href="spotlight.html" style="color: chartreuse">Spotlight</a></li>
+                <li><a href="playlist.html">Playlist</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </nav>
+		
+		<p>&nbsp</p>
+		
+
+		<div class="artist">
+			<img id="artist-img" src="../static/img/abel.jpg" alt="Artist Name"><br>
+			<h1>THE WEEKND</h1>
+			<p>With a voice that can pierce the soul and a style that oozes cool, Abel Makkonen Tesfaye, better known as The Weeknd, effortlessly blends R&B, pop, and electronic music to create a sound that is uniquely his own. With his signature hair and enigmatic persona, he exudes an air of mystery and intrigue, drawing listeners in with his hauntingly beautiful lyrics and hypnotic beats.<br> Whether he's singing about love, heartbreak, or the darker aspects of life, The Weeknd has a way of making you feel every emotion deeply. He's a true artist in every sense of the word, constantly pushing boundaries and creating music that is both timeless and modern.</p>
+		</div>
+		<br><br><br><br><br>
+		<div class="countdown">
+			<b><marquee loop="3" behavior="alternate" scrollamount="30" style="font-family: 'Courier Prime', Courier, monospace; padding-left: 68px; padding-right: 68px; color:#ff0 ; font-size: 50px;">New album out in:</marquee></b>
+			<div id="countdown-timer"></div>
+		</div>
+
+
+		<br><br><br><br><br><br>
+
+
+		<div id="reviews" style="padding-left: 100px; font-family: 'Courier Prime', Courier, monospace;">
+		<h1 style="font-size: 30px;">Add a review:</h1><br>
+		<form style="padding-left: 50px; font-size: 25px;">
+
+			<div>
+			<label for="username">Name:</label>
+			<input id="username" type="text" id="username" name="username" required>
+			</div><br>
+
+			<div>
+			<label for="rating">Rating:</label>
+			&emsp;
+			&emsp;
+			<input type="radio" id="1-star" name="rating" value="1" required>
+			<label for="1-star"><b class="fas fa-star">⭐</b></label>
+			&emsp;
+			&emsp;
+			<input type="radio" id="2-star" name="rating" value="2" required>
+			<label for="2-star"><b class="fas fa-star">⭐⭐</b></label>
+			&emsp;
+			&emsp;
+			<input type="radio" id="3-star" name="rating" value="3" required>
+			<label for="4-star"><b class="fas fa-star">⭐⭐⭐</b></label>
+			&emsp;
+			&emsp;
+			<input type="radio" id="4-star" name="rating" value="4" required>
+			<label for="4-star"><b class="fas fa-star">⭐⭐⭐⭐</b></label>
+			&emsp;
+			&emsp;
+			<input type="radio" id="5-star" name="rating" value="5" required>
+			<label for="5-star"><b class="fas fa-star">⭐⭐⭐⭐⭐</b></label>
+			</div><br>
+
+			<div>
+			<label for="review">Review:</label><br>
+			<textarea id="review" name="review" required></textarea>
+			</div><br>
+
+			<button id="submit" type="submit">Submit</button>
+
+		</form><br><br>
+
+		<table>
+			<thead>
+			<tr>
+				<th>Name</th>&emsp;
+				<th>Rating</th>&emsp;
+				<th>Review</th>
+			</tr>
+			</thead> 
+			<tbody id="reviews-table-body">
+			</tbody>
+		</table>
+		</div>
+
+		
+    	<script src="../static/spotlight.js"></script>
+	<script src="../static/nav.js"></script>
+</body>
+	
+	<p>&nbsp</p>
+	<p>&nbsp</p>
+		
+	<footer>
+            <span style="font-family: Courier Prime, Arial;">&#169 2023 &emsp; |&emsp; TuneVault &emsp;|&emsp; All rights reserved &emsp;|&emsp; <a href="about.html" style="margin-bottom: 0%;">About us</a></span>
+        </footer>
+</html>

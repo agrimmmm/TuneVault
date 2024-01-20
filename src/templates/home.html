@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="../static/img/sax.png" type="image/x-icon">
+        <title>TuneVault</title>
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
+	    @import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Courier+Prime&display=swap');
+
+            .vertical-line
+            {
+                border-left: 2px solid white;
+                height: 200px;
+            }
+
+            div
+            {
+                display: grid;
+                grid-template-columns: repeat(3, 400px);
+                font-size: 40px;
+                gap: 40px;
+            }
+
+            a.images
+            {
+                background-color: black;
+                border-radius: 25px;
+                font-family:Libre Baskerville;
+                box-shadow: 10px 10px 10px #FF030088;
+            }
+
+            a img:hover
+            {
+                width: 420px;
+                height: 420px;  
+            }
+
+            a img
+            {   
+                border-radius: 120px;
+                height: 400px;
+                width: 400px;
+                padding: 50px;
+                position: relative;
+                transition: 0.5s ease;
+                border:8px white;
+            }
+
+            #clicktohome:hover{
+                background-color: #00000000;
+                text-decoration: none;
+            }
+
+            footer{
+	    	position: absolute;
+	    	float: end;
+                left: 0;
+                right: 0;
+                line-height: 30px;
+                text-align: center;
+                background-color: black;
+                color: white;
+                padding-bottom: 5px;
+                font-size: 20px;
+                
+            }
+
+            footer a{
+                text-decoration: none;
+                color: white;
+            }
+
+            footer a:hover{
+            	color: #FFFFFFAA;
+            }
+
+            nav {
+            	height: 100px;
+                position: fixed;
+                top: 0;
+                left: 0;
+                width: 100%;
+                background-color: black;
+                padding: 0px;
+                z-index: 2;
+                box-shadow: 0px 2px 0px white;
+            }
+    
+            nav ul {
+                list-style: none;
+                margin: 0;
+                padding-top: 15px;
+                display: flex;
+                justify-content: space-around;
+            }
+    
+            nav li {
+                margin: 0 10px;
+            }
+    
+            nav a {
+                color: #fff;
+                text-decoration: none;
+                font-size: 25px;
+                font-weight: bold;
+                padding: 5px 10px;
+                border-radius: 5px;
+            }
+
+                        
+            #clicktohome:hover{
+                background-color: #00000000;
+                text-decoration: none;
+            }
+            
+
+        </style>
+    </head>
+    <body background="../static/img/bg_photo2.png"
+        style="background-size: cover; padding-top: 100px; color:white; font-size: 30px; ">
+        <nav style="font-family: Arial, Helvetica, sans-serif;">
+            <img src="../static/img/sax_tv.png" alt="Site logo" style="height: 100px; margin-left: 60px;">
+            <ul style="width: 60%; float: right; margin-right: 50px; text-align: center; margin-top: 20px; font-family: Courier Prime, Arial;">
+                <li><a href="home.html" style="color: chartreuse">Home</a></li>
+                <li><a href="artists.html">Artists</a></li>
+        		<li><a href="search.html">Search</a></li>
+        		<li><a href="spotlight.html">Spotlight</a></li>
+                <li><a href="playlist.html">Playlist</a></li>
+                <li><a href="about.html">About Us</a></li>
+            </ul>
+        </nav>
+        <img src="../static/img/logo-removebg-preview.png"
+            style="margin-left: 50px; margin-right: 50px;">
+        
+        <p style="width: 60%; font-size: 70px; text-align: center; float: right; margin-top: 170px;
+                text-shadow:5px 5px #7c0909;
+                font-family:Libre Baskerville ,system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;">
+            Connecting people through the language of music</p><br><br>
+
+
+        <h1 style="font-weight: 200;
+        font-family:Libre Baskerville; line-height: 30px; text-shadow:4px 4px 4px beige; padding-top: 30px; padding-left: 50px; padding-right: 50px;">Top Artists<hr></h1><br>
+        <div style="display:inline-flex; justify-content: space-around;text-align: center; margin-left: 150px;">
+            <a class="images" href="theweeknd/theweeknd.html" style="text-decoration: none; text-align: center; color: white; padding-bottom: 30px;">
+                <img src="../static/img/weeknd.png"><br>
+                <span>The Weeknd</span>       
+            </a>
+
+            <a class="images" href="edsheeran/edsheeran.html" style="text-decoration: none; text-align: center; color: white; padding-bottom: 30px;">
+                <img src="../static/img/ed_sheeran.png"><br>
+                <span>Ed Sheeran</span>
+            </a>
+
+            <a class="images" href="pinkfloyd/pinkfloyd.html" style="text-decoration: none; text-align: center; color: white; padding-bottom: 30px;">
+                <img src="../static/img/pink.jpg"><br>
+                <span>Pink Floyd</span>
+            </a>
+        </div><br><br>
+
+        <h1 style="font-weight: 200;
+                font-family: Libre Baskerville; line-height: 30px; text-shadow:4px 4px 4px beige; padding-top: 30px; padding-left: 50px; padding-right: 50px;">Top Albums<hr></h1><br>
+        <div style="display:inline-flex; justify-content: space-around;text-align: center; margin-left: 150px;">
+            <a class="images" href="edsheeran/equals.html" style="text-decoration: none; text-align: center; color: white; padding-bottom: 30px;">
+                <img src="../static/img/equals.png"><br>
+                <span>=<br>
+                    <sub style="font-size:20px;">Ed Sheeran</sub> </span>  
+            </a>
+
+            <a class="images" href="pinkfloyd/wall.html" style="text-decoration: none; text-align: center; color: white; padding-bottom: 30px;">
+                <img src="../static/img/the_wall.png"><br>
+                <span>The Wall<br>
+                    <sub style="font-size:20px;">Pink Floyd</sub></span>
+            </a>
+            
+            <a class="images" href="theweeknd/after.html" style="text-decoration: none; text-align: center; color: white; padding-bottom: 30px;">
+                <img src="../static/img/after_hours.png"><br>
+                <span>After Hours<br>
+                    <sub style="font-size:20px;">The Weeknd</sub></span>
+            </a>
+        </div><br><br>
+        
+        <h1 style="font-weight: 200;
+                font-family: Libre Baskerville; line-height: 30px; text-shadow:4px 4px 4px beige; padding-top: 30px; padding-left: 50px; padding-right: 50px;">Top Songs<hr></h1><br>
+        <div style="display:inline-flex; justify-content: space-around;text-align: center; margin-left: 150px;">
+            <a class="images" style="text-decoration: none; text-align: center; color: white; padding-bottom: 30px;">
+                <img src="../static/img/shape_of_you.png"><br>
+                <span>Shape of You<br>
+                    <sub style="font-size:20px;">Ed Sheeran</sub></span>     
+            </a>
+
+            <a class="images" style="text-decoration: none; text-align: center; color: white; padding-bottom: 30px;">
+                <img src="../static/img/blinding_lights.png"><br>
+                <span>Blinding Lights<br>
+                    <sub style="font-size:20px;">The Weeknd</sub></span>
+            </a>
+            
+            <a class="images" style="text-decoration: none; text-align: center; color: white; padding-bottom: 30px;">
+                <img src="../static/img/perfect.png"><br>
+                <span>Perfect<br>
+                    <sub style="font-size:20px;">Ed Sheeran</sub></span>
+            </a>
+        </div><br><br>
+        
+     <footer>
+            <span style="font-family: Courier Prime, Arial;">&#169 2023 &emsp; |&emsp; TuneVault &emsp;|&emsp; All rights reserved &emsp;|&emsp; <a href="about.html" style="margin-bottom: 0%;">About us</a></span>
+        </footer>
+	<script src="../static/nav.js"></script>
+</body>
+</html>

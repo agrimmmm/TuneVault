@@ -1,5 +1,5 @@
 # TuneVault
-### Connecting people with the language of music
+### _Connecting people with the language of music_
 Your one step destination to a diverse music database!
 
 ## Accessing the site
